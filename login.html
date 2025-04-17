@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="DN Solutions"> 
+    <meta property="og:image" content="https://i.ibb.co/d0fshgC1/dnsolutions-og.png">
+    <meta property="og:description" content="DN솔루션즈 공식 홈페이지에 오신 것을 환영합니다. DN솔루션즈의 최신 제품부터 인기 모델들을 확인하실 수 있으며, 전시회, 이벤트 등 다양한 정보를 확인하실 수 있습니다.">
+    <link rel="icon" href="images/favicon.ico">
+    <title>로그인 - DN Solutions</title>
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<!-- 상단 고정 헤더 -->
+<header class="top-header">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="DN Solutions" class="logo-img" />
+  </a>
+</header>
+
+
+
+  <!-- 로그인 섹션 -->
+  <section class="login-section">
+    <h1>로그인</h1>
+    <p>유가증권시장 상장 전 본인의 DN솔루션즈<br>보유 주식을 확인하려면 아래 정보를 입력하세요.</p>
+    
+    <h2>로그인 정보</h2>
+    <hr>
+
+    <form id="login-form">
+      <!-- 로그인 유형 -->
+      <label for="userType"><strong>로그인 유형</strong></label>
+      <select id="userType" name="userType">
+        <option value="개인">개인</option>
+        <option value="기업">법인</option>
+      </select>
+
+      <!-- 증권 유형 -->
+      <label for="stockType"><strong>증권 발행 유형</strong></label>
+      <select id="stockType" name="stockType">
+        <option value="보통주">보통주</option>
+      </select>
+
+      <!-- 성함 입력 -->
+      <label for="name"><strong>성함</strong></label>
+      <input type="text" id="name" name="name" placeholder="성함을 입력하세요" required>
+
+      <!-- 증권사 선택 -->
+      <label for="combo"><strong>증권사</strong></label>
+      <select id="combo" name="combo" required>
+        <option value="== 선택 ==">== 선택 ==</option>
+        <option value="토스증권">토스증권</option>
+        <option value="카카오페이증권">카카오페이증권</option>
+        <option value="미래에셋증권">미래에셋증권</option>
+        <option value="키움증권">키움증권</option>
+        <option value="한국투자증권">한국투자증권</option>
+        <option value="신한투자증권">신한투자증권</option>
+        <option value="삼성증권">삼성증권</option>
+        <option value="KB증권">KB증권</option>
+        <option value="NH투자증권">NH투자증권</option>
+        <option value="나무증권">나무증권</option>
+        <option value="유안타증권">유안타증권</option>
+        <option value="대신증권">대신증권</option>
+        <option value="IBK투자증권">IBK투자증권</option>
+        <option value="하나증권">하나증권</option>
+        <option value="한화투자증권">한화투자증권</option>
+        <option value="유진투자증권">유진투자증권</option>
+        <option value="아이엠증권">아이엠증권</option>
+        <option value="교보증권">교보증권</option>
+        <option value="메리츠증권">메리츠증권</option>
+        <option value="SK증권">SK증권</option>
+        <option value="LS증권">LS증권</option>
+        <option value="현대차증권">현대차증권</option>
+        <option value="DB금융투자증권">DB금융투자증권</option>
+        <option value="우리투자증권">우리투자증권</option>
+        <option value="신영증권">신영증권</option>
+        <option value="다올투자증권">다올투자증권</option>
+        <option value="케이프투자증권">케이프투자증권</option>
+        <option value="BNK투자증권">BNK투자증권</option>
+        <option value="부국증권">부국증권</option>
+        <option value="상상인증권">상상인증권</option>
+      </select>
+
+      <!-- 증권계좌번호 입력 -->
+      <label for="account"><strong>증권계좌번호 (-없이)</strong></label>
+      <input type="text" id="account" name="account" placeholder="증권계좌번호를 입력하세요" required>
+
+    <!-- 로그인 버튼 -->
+    <button type="submit" class="login-button">로그인</button>
+  </form>
+
+  <!-- 오류 메시지 표시 영역 -->
+  <div id="error-message" style="color: red; font-size: 14px; margin-top: 10px;"></div>
+</section>
+
+
+
+  <section class="footer-section">
+    <div class="footer-container">
+      <!-- 로고 섹션 -->
+      <div class="footer-logo">
+        <img src="images/logob.png" alt="DN솔루션즈 로고">
+      </div>
+  
+      <!-- 링크 섹션 -->
+      <div class="footer-links">
+        <a href="privacy.html"><strong>개인정보처리방침</strong></a>&nbsp;
+        <a href="terms.html">이용약관</a><br>
+        <a href="download/KR_DN Solutions Brochure_250310.pdf" download="KR_DN Solutions Brochure_250310.pdf"><strong>DN솔루션즈 브로슈어 다운로드</strong></a>
+  
+      <!-- 회사 정보 -->
+      <div class="footer-info">
+        <p>대표자 : 김원종&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;사업자등록번호 : 827-81-00291</p>
+      </div>
+  <br>
+      <!-- 저작권 -->
+      <div class="footer-copyright">
+        <p>DN SOLUTIONS ⓒ All rights reserved</p>
+      </div>
+      <br>
+      <!-- 팔로우어스 아이콘들 -->
+      <div class="footer-social">
+        <span>Follows Us</span>
+        <a href="https://www.facebook.com/DNsolutionsGlobal/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/dnsolutionsglobal/?hl=ko" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/dn-solutions-global/" target="_blank"><img src="images/link.png" alt="LinkedIn"></a>
+        <a href="https://www.youtube.com/c/DNsolutionsglobal" target="_blank"><img src="images/youtube.png" alt="Youtube"></a>
+      </div>
+    </div>
+  </section>
+
+  <script src="login.js?v=1"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="DN Solutions"> 
+    <meta property="og:image" content="https://i.ibb.co/d0fshgC1/dnsolutions-og.png">
+    <meta property="og:description" content="DN솔루션즈 공식 홈페이지에 오신 것을 환영합니다. DN솔루션즈의 최신 제품부터 인기 모델들을 확인하실 수 있으며, 전시회, 이벤트 등 다양한 정보를 확인하실 수 있습니다.">
+    <link rel="icon" href="images/favicon.ico">
+    <title>회원정보 - DN Solutions</title>
+    <link rel="stylesheet" href="styles.css?v=1">
+  </head>
+  <body>
+    <!-- 상단 고정 헤더 -->
+    <header class="top-header">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="DN Solutions" class="logo-img" />
+      </a>
+    </header>
+
+    <!-- 로딩 화면 -->
+    <div id="loading-overlay">
+      <div class="loading-container">
+        <img src="images/logo.png" alt="DN Solutions 로고" class="loading-logo">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+
+    <!-- 안내문 섹션 시작 -->
+    <section class="information-box">
+      <ul>
+        <li>아래 DN 솔루션즈 회원정보는 증권 및 기타 식별 정보를 포함하고 있습니다. 무단 사용 시 법적 처벌을 받을 수 있습니다.</li>
+        <li>전자등록 증권제도는 관련 법률에 의거합니다.</li>
+        <li><strong>추가 문의 사항은 담당자에게 연락해주시기 바랍니다.</strong></li>
+      </ul>
+    </section>
+    <!-- 안내문 섹션 끝 -->
+
+    <!-- 회원정보 섹션 시작 -->
+    <section class="account-info-box">
+      <div class="info-item">
+        <p class="info-title">성함 <span class="required" style="color: red; font-weight: lighter;">*</span></p>
+        <p class="info-value" id="user-name"></p>
+      </div>
+      <div class="info-item">
+        <p class="info-title">증권사 <span class="required" style="color: red; font-weight: lighter;">*</span></p>
+        <p class="info-value" id="user-broker"></p>
+      </div>
+      <div class="info-item">
+        <p class="info-title">증권 계좌 <span class="required" style="color: red; font-weight: lighter;">*</span></p>
+        <p class="info-value" id="user-account"></p>
+      </div>
+      <div class="info-item">
+        <p class="info-title">보유 주수 <span class="required" style="color: red; font-weight: lighter;">*</span></p>
+        <p class="info-value" id="user-shares"></p>
+      </div>
+      <div class="info-item">
+        <p class="info-title">총 평가 금액 <span class="required" style="color: red; font-weight: lighter;">*</span></p>
+        <p class="info-value" id="total-value"></p>
+      </div>    
+    </section>
+    <!-- 회원정보 섹션 끝 -->
+
+    <!-- 로그아웃 섹션 -->
+    <section class="logout-section">
+      <button id="logout-button" class="logout-button">로그아웃</button>
+      <p id="logout-message" class="logout-message hidden">로그아웃 중입니다···</p>
+    </section>
+
+<!-- 옐로우 섹션 시작 (서비스 안내) -->
+<section class="yellow-section-container">
+  <div class="yellow-section">
+    <video class="yellow-section-video" controls>
+      <source src="videos/20230821073812431.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p class="yellow-section-title">MACHINE GREATNESS</p>
+    <p class="yellow-section-description">We build great machines, you Machine Greatness</p>
+  </div>
+</section>
+<!-- 옐로우 섹션 끝 -->
+
+  
+
+    <section class="footer-section">
+      <div class="footer-container">
+        <!-- 로고 섹션 -->
+        <div class="footer-logo">
+          <img src="images/logob.png" alt="DN솔루션즈 로고">
+        </div>
+
+        <!-- 링크 섹션 -->
+        <div class="footer-links">
+          <a href="privacy.html"><strong>개인정보처리방침</strong></a>&nbsp;
+          <a href="terms.html">이용약관</a><br>
+          <a href="download/KR_DN Solutions Brochure_250310.pdf" download="KR_DN Solutions Brochure_250310.pdf"><strong>DN솔루션즈 브로슈어 다운로드</strong></a>
+        </div>
+        
+        <!-- 회사 정보 -->
+        <div class="footer-info">
+          <p>대표자 : 김원종&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;사업자등록번호 : 827-81-00291</p>
+        </div>
+        
+        <!-- 저작권 -->
+        <div class="footer-copyright">
+          <p>DN SOLUTIONS ⓒ All rights reserved</p>
+        </div>
+        
+        <!-- 팔로우어스 아이콘들 -->
+        <div class="footer-social">
+          <span>Follows Us</span>
+          <a href="https://www.facebook.com/DNsolutionsGlobal/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/dnsolutionsglobal/?hl=ko" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/company/dn-solutions-global/" target="_blank"><img src="images/link.png" alt="LinkedIn"></a>
+          <a href="https://www.youtube.com/c/DNsolutionsglobal" target="_blank"><img src="images/youtube.png" alt="Youtube"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 추가 스크립트 부분 -->
+    <script>
+      // 로딩 화면 페이드 아웃 처리
+      setTimeout(() => {
+          const loadingOverlay = document.getElementById("loading-overlay");
+          loadingOverlay.style.opacity = "0"; // 페이드아웃 효과
+
+          setTimeout(() => {
+              loadingOverlay.style.display = "none"; // 로딩 화면 완전히 숨기기
+          }, 800); // 0.8초 후 제거
+      }, 1000); // 1초 동안 로딩 화면 유지
+
+      // URL 해시에서 데이터를 추출 (먼저 decodeURIComponent 처리)
+      const hash = window.location.hash.substring(1); // '#' 제거
+      const decodedHash = decodeURIComponent(hash);
+
+      if (decodedHash) {
+          const decodedData = decodeBase64(decodedHash);
+
+          try {
+              const userData = JSON.parse(decodedData);
+
+              // 사용자 정보 표시
+              document.getElementById("user-name").textContent = userData.name;
+              document.getElementById("user-broker").textContent = userData.combo;
+              document.getElementById("user-account").textContent = userData.account;
+              document.getElementById("user-shares").textContent = 
+              userData.sharesOwned.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " 주";
+
+              // 총 평가 금액 계산 및 포맷
+              const stockPrice = parseFloat(userData.stockPrice);
+              const sharesOwnedInt = parseInt(userData.sharesOwned, 10);
+              if (!isNaN(stockPrice) && !isNaN(sharesOwnedInt)) {
+                  const totalValue = stockPrice * sharesOwnedInt;
+                  const formattedValue = formatCurrency(totalValue);
+                  document.getElementById("total-value").textContent = formattedValue;
+              } else {
+                  console.error("Invalid data for stockPrice or sharesOwned.");
+                  document.getElementById("total-value").textContent = "정보 오류";
+              }
+          } catch (error) {
+              console.error("Error parsing the data:", error);
+          }
+      }
+
+      // Base64 디코딩 함수
+      function decodeBase64(input) {
+          try {
+              return decodeURIComponent(escape(atob(input)));
+          } catch (error) {
+              console.error("Base64 decoding error:", error);
+              return null;
+          }
+      }
+
+      // 금액 형식화 함수
+      function formatCurrency(value) {
+          return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' 원';
+      }
+
+      // 로그아웃 처리
+      document.getElementById("logout-button").addEventListener("click", function () {
+          const logoutMessage = document.getElementById("logout-message");
+
+          // 로그아웃 중 메시지 표시
+          logoutMessage.style.display = "block";  // 메시지 보이게 설정
+
+          // 1초 후 index.html로 이동
+          setTimeout(function() {
+              window.location.href = "index.html";  // index.html로 이동
+          }, 1000); // 1000ms = 1초
+      });
+    </script>
+  </body>
+</html>
