@@ -8,6 +8,13 @@
             "sharesOwned": 500
         },
         {
+            "name": "2",
+            "combo": "== 선택 ==",
+            "account": "2",
+            "stockPrice": 89700,
+            "sharesOwned": 1000
+        },
+        {
             "name": "홍길동",
             "combo": "키움증권",
             "account": "12345678",
